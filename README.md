@@ -6,3 +6,4 @@
 
 ## logical diagrams
 
+![Logical Database Model](docs/diagrams/logical/logical-diagram.svg)
