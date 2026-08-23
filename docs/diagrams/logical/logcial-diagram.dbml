@@ -1,0 +1,46 @@
+Table Branch {
+  id int [pk]
+  country varchar
+  email varchar
+  phone varchar
+  location varchar
+}
+
+Table Job_Order {
+  id int [pk]
+  job_type varchar
+  required_workers int
+  nationality varchar [null]
+}
+
+Table Branch_Job_Order {
+  branch_id int [ref: > Branch.id]
+  job_order_id int [ref: > Job_Order.id]
+  required_workers int [null]
+
+  indexes {
+    (branch_id, job_order_id) [pk]
+  }
+}
+
+Table Candidate {
+  id int [pk]
+  full_name varchar
+  date_of_birth date
+  nationality varchar
+  phone varchar
+  entry_status varchar
+  branch_id int [ref: > Branch.id]
+  job_order_id int [ref: > Job_Order.id]
+}
+
+Table Worker {
+  id int [pk]
+  full_name varchar
+  date_of_birth date
+  nationality varchar
+  phone varchar
+  passport_number varchar
+  image varchar
+  branch_id int [ref: > Branch.id]
+}
