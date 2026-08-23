@@ -12,6 +12,12 @@ The application will be divided into independent business modules, where each mo
 
 Each module will follow a **Layered Architecture**, organizing its code into presentation, business logic, and data access layers.
 
+**TypeORM** will be used as the ORM for database operations, providing:
+* Entity-based data modeling
+* Migration management
+* Query builder and repository pattern
+* Support for PostgreSQL with schema per tenant multi-tenancy
+
 ## Rationale
 
 This architecture was chosen because it:
