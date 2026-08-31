@@ -1,1 +1,10 @@
 *.drawio
+
+# Dependencies
+node_modules/
+
+# Turbo
+.turbo
+
+# Temp folder
+temp-folder/
