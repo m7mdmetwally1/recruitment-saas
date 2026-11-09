@@ -1,3 +1,3 @@
-import AuthConfig from './auth.config.js';
+import AuthConfig from './auth.config';
 
 export default [AuthConfig];

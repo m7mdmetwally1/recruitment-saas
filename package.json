@@ -1,6 +1,7 @@
 {
   "name": "recruitment-saas",
   "private": true,
+  "packageManager": "pnpm@12.18.0",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
